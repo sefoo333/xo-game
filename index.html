@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xo Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="about-me">
+        <ion-icon name="globe"></ion-icon>
+    </div>
+
+    <div class="window-2">
+        <div class="close">
+            <ion-icon name="close-circle"></ion-icon>
+        </div>
+        <h1>About me</h1>
+        <p>Hi , My Name is SaifAli , I built this website , Please write your Suggestion for this website to upgrade
+            more ^^ , Enjoy :D</p>
+        <div class="links">
+            <a target="_blank" href="https://www.facebook.com/seif.ali123/"><ion-icon
+                    name="logo-facebook"></ion-icon></a>
+            <a target="_blank" href="https://github.com/sefoo333/"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sefoo333/"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="winner">
+        <h1>{} is Winner ! 🥳</h1>
+    </div>
+
+    <div class="start-window">
+        <h1>Tic</h1>
+        <h1>Tac</h1>
+        <h1>Toe</h1>
+    </div>
+
+    <div class="par">
+        <div class="main">
+            <h1 class="x">X</h1>
+            <h1 class="o">O</h1>
+        </div>
+
+        <div class="game">
+            <div class="squ no" id="item1" onclick="game(this.id)"></div>
+            <div class="squ no" id="item2" onclick="game(this.id)"></div>
+            <div class="squ no" id="item3" onclick="game(this.id)"></div>
+            <div class="squ no" id="item4" onclick="game(this.id)"></div>
+            <div class="squ no" id="item5" onclick="game(this.id)"></div>
+            <div class="squ no" id="item6" onclick="game(this.id)"></div>
+            <div class="squ no" id="item7" onclick="game(this.id)"></div>
+            <div class="squ no" id="item8" onclick="game(this.id)"></div>
+            <div class="squ no" id="item9" onclick="game(this.id)"></div>
+        </div>
+
+        <div class="footer">
+            <div class="w">
+                <h1>O</h1>
+                <span class="won">0</span>
+            </div>
+            <h1>:</h1>
+            <!-- <div class="w">
+                balance: <span class="ww">0</span>
+            </div> -->
+            <div class="w">
+                <h1>X</h1>
+                <span class="lose">0</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="window">
+        <!-- <a id="save" href="#" data-text="save"><ion-icon name="save"></ion-icon></a> -->
+        <a id="reload" href="#" onmouseover="hover(this.id)" onmouseleave="exit()" data-text="refresh match"><ion-icon
+                name="refresh"></ion-icon>
+            <!-- <span style="        font-size: 15px;
+            position: absolute;
+            top: -38px;
+            right: 2px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            /* transform: translateX(-50%); */">Reload</span> -->
+        </a>
+        <a style="margin-top: 23px;" onmouseenter="hover(this.id)" onmouseleave="exit()" id="clear" href="#"
+            data-text="clear Data"><ion-icon name="close-circle"></ion-icon>
+
+        </a>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
